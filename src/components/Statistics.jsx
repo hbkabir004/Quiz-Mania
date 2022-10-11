@@ -1,17 +1,11 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
-import {
-    Area,
-    Bar, CartesianGrid, ComposedChart, Legend, Line, Tooltip, XAxis,
-    YAxis
-} from 'recharts';
-const Statistics = () => {
-
-const quizTotal = useLoaderData();
-const {data} = quizTotal;
-const total = data.map(topic => topic.total);
-const id = data.map(topic => topic.id);
-const name = data.map(topic => topic.name);
+const Statistics = (props) => {
+    // const quizTotal = useLoaderData();
+    // const {data} = quiz;
+    // const total = data.map(topic => topic.total);
+    // const id = data.map(topic => topic.id);
+    // const name = data.map(topic => topic.name);
+    console.log(props.quiz);
 
 
 
@@ -59,34 +53,7 @@ const name = data.map(topic => topic.name);
 
 
         
-       <div className='flex justify-center align-middle sm:mx-32'>
-            {/* <PieChart width={500} height={500}>
-               <Pie data={data} dataKey="total" cx="50%" cy="50%" outerRadius={120} fill="#fef08a" />
-               <Pie data={data} dataKey="total" cx="50%" cy="50%" innerRadius={130} outerRadius={150} fill="#424a56" label />
-            </PieChart> */}
-            <ComposedChart
-          width={500}
-          height={400}
-          data={data}
-          margin={{
-            top: 20,
-            right: 20,
-            bottom: 20,
-            left: 20,
-          }}
-        >
-          <CartesianGrid stroke="#f5f5f5" />
-          <XAxis dataKey="name" scale="band" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Area type="monotone" dataKey="total" fill="#fef08a" stroke="#8884d8" />
-          <Bar dataKey="total" barSize={20} fill="#413ea0" />
-          <Line type="monotone" dataKey="id" stroke="#ff7300" />
-          
-        </ComposedChart>
-       </div>
-
+      
 
 
         {/* <br />

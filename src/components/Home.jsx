@@ -36,13 +36,13 @@ const Home = () => {
           </p>
           <div className="flex items-center">
             <a
-              href="/"
+              href="/topic"
               className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-yellow-300 hover:bg-yellow-500 focus:shadow-outline focus:outline-none"
             >
               Get started
             </a>
             <a
-              href="/"
+              href="/stat"
               aria-label=""
               className="inline-flex items-center font-semibold text-gray-800 transition-colors duration-200 hover:text-yellow-400"
             >
