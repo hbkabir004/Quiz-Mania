@@ -1,6 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
-import About from './components/About';
 import Blog from './components/Blog';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
@@ -34,10 +33,10 @@ function App() {
           path: '/blog',
           element: <Blog></Blog>,
         },
-        {
-          path: '/about',
-          element: <About></About>,
-        },
+        // {
+        //   path: '/about',
+        //   element: <About></About>,
+        // },
         {
           path: '/quiz/:quizID',
           loader:async({params})=>{

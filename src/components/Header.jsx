@@ -65,7 +65,7 @@ const Header = () => {
               Blog
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to='/about'
               aria-label='About Us'
@@ -74,7 +74,7 @@ const Header = () => {
             >
               About Us
             </NavLink>
-          </li>
+          </li> */}
         </ul>
         <div className='lg:hidden'>
           <button
@@ -180,7 +180,7 @@ const Header = () => {
                         Blog
                       </NavLink>
                     </li>
-                    <li>
+                    {/* <li>
                       <NavLink
                         to='/about'
                         aria-label='About Us'
@@ -189,7 +189,7 @@ const Header = () => {
                       >
                         About Us
                       </NavLink>
-                    </li>
+                    </li> */}
                   </ul>
                 </nav>
               </div>
