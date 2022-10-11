@@ -10,7 +10,7 @@ const Statistics = () => {
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
-            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-yellow-200">
+            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-deep-purple-accent-400 uppercase rounded-full bg-yellow-200">
               Updated
             </p>
           </div>
@@ -40,7 +40,7 @@ const Statistics = () => {
               </svg>
               <span className="relative">Explore</span>
             </span>{' '}
-            Our Recent Statistics
+            Our Recent <span className="inline-block text-deep-purple-accent-400">Statistics</span>
           </h2>
           <div className='flex justify-center align-middle sm:mx-32'>
             <ComposedChart

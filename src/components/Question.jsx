@@ -4,11 +4,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import QuizCard from './QuizCard';
 
 const Question = ({quiz}) => {
-    const {id, question, options, correctAnswer} = quiz;
+    const {question, options, correctAnswer} = quiz;
 
     const notify = () => toast.success(`Answer: ${correctAnswer}`,
     {
-        position: "top-center",
+        position: "top-right",
         autoClose: 3000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -19,7 +19,7 @@ const Question = ({quiz}) => {
         });
     return (
         <div>
-            <a href="#" className="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100">
+            <a className="block p-6 max-w-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100">
             <div className='flex justify-end'>
             <h5 className="mb-2 text-xl font-bold tracking-tight text-gray-900">{question}</h5>
             
