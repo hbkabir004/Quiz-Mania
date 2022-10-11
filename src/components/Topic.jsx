@@ -13,7 +13,7 @@ const Topic = ({topic}) => {
           <div>
             <h6 className="mb-3 text-xl font-bold leading-5">{name}</h6>
             <p className="mb-3 text-sm text-gray-900">
-              Total quiz : {total}
+              Total quiz : <b>{total}</b>
             </p>
             <Link
               to ={`/quiz/${id}`}
