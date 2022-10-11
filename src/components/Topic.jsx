@@ -3,26 +3,47 @@ import React from 'react';
 const Topic = ({topic}) => {
     const {id, name, logo, total} = topic;
     return (
-        <div className="grid gap-4 row-gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col justify-between p-5 border rounded shadow-sm">
-              <div>
-                <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full">
-                  <img src={logo} alt="" srcset="" />
-                </div>
-                <h6 className="mb-2 font-semibold leading-5">{name}</h6>
-                <p className="mb-3 text-sm text-gray-900">
-                  Total Quiz: {total}
-                </p>
-              </div>
-              <a
-                href="/"
-                aria-label=""
-                className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-              >
-                Learn more
-              </a>
+      // <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      
+      // <div className="grid max-w-screen-lg gap-8 row-gap-10 mx-auto lg:grid-cols-2">
+        <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row border-solid border-2 border-yellow-200 pl-5 pr-32 py-8 rounded-lg hover:bg-yellow-100">
+          <div className="mr-4">
+            <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-100">
+              <img src={logo} alt="" srcset="" />
             </div>
           </div>
+          <div>
+            <h6 className="mb-3 text-xl font-bold leading-5">{name}</h6>
+            <p className="mb-3 text-sm text-gray-900">
+              Total quiz : {total}
+            </p>
+            <a
+              href="/quiz"
+              aria-label=""
+              className="inline-flex items-center font-semibold transition-colors duration-200 p-2 rounded-lg bg-yellow-400 hover:text-sky-400"
+            >
+              <span className='mr-2'>Start Quiz</span>
+               
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+
+
+
+
+             
+            </a>
+            
+            
+            
+            
+          </div>
+        </div>
+        
+        
+        
+    //   </div>
+    // </div>
     );
 };
 
