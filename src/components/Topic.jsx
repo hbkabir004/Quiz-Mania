@@ -1,11 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Topic = ({topic}) => {
     const {id, name, logo, total} = topic;
     return (
-      // <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      
-      // <div className="grid max-w-screen-lg gap-8 row-gap-10 mx-auto lg:grid-cols-2">
         <div className="flex flex-col max-w-md sm:mx-auto sm:flex-row border-solid border-2 border-yellow-200 pl-5 pr-32 py-8 rounded-lg hover:bg-yellow-100">
           <div className="mr-4">
             <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-100">
@@ -17,8 +15,8 @@ const Topic = ({topic}) => {
             <p className="mb-3 text-sm text-gray-900">
               Total quiz : {total}
             </p>
-            <a
-              href="/quiz"
+            <Link
+              to ={`/quiz/${id}`}
               aria-label=""
               className="inline-flex items-center font-semibold transition-colors duration-200 p-2 rounded-lg bg-yellow-400 hover:text-sky-400"
             >
@@ -32,7 +30,7 @@ const Topic = ({topic}) => {
 
 
              
-            </a>
+            </Link>
             
             
             
@@ -40,10 +38,6 @@ const Topic = ({topic}) => {
           </div>
         </div>
         
-        
-        
-    //   </div>
-    // </div>
     );
 };
 
