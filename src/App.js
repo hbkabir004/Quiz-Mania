@@ -1,11 +1,12 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import About from './components/About';
 import Blog from './components/Blog';
 import ErrorPage from './components/ErrorPage';
 import Home from './components/Home';
 import Main from './components/Main';
 import Statistics from './components/Statistics';
-import Topic from './components/Topic';
+import Topics from './components/Topics';
 
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
         },
         {
           path: '/topic',
-          element: <Topic></Topic>,
+          element: <Topics></Topics>,
         },
         {
           path: '/stat',

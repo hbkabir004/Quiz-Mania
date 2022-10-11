@@ -1,14 +1,10 @@
-import React from 'react';
-const Statistics = (props) => {
-    // const quizTotal = useLoaderData();
-    // const {data} = quiz;
-    // const total = data.map(topic => topic.total);
-    // const id = data.map(topic => topic.id);
-    // const name = data.map(topic => topic.name);
-    console.log(props.quiz);
-
-
-
+import React, { useContext } from 'react';
+import { Area, Bar, CartesianGrid, ComposedChart, Legend, Line, Tooltip, XAxis, YAxis } from 'recharts';
+import { QuizContext } from './Main';
+const Statistics = () => {
+    const quiz = useContext(QuizContext);
+    console.log(quiz);
+    const {data} = quiz;
 
     return (
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -46,9 +42,29 @@ const Statistics = (props) => {
             </span>{' '}
             Our Recent Statistics
           </h2>
-          {/* <p className="text-base text-gray-700 md:text-lg">
-            
-          </p> */}
+          <div className='flex justify-center align-middle sm:mx-32'>
+            <ComposedChart
+                width={500}
+                height={400}
+                data={data}
+                margin={{
+                top: 20,
+                right: 20,
+                bottom: 20,
+                left: 20,
+          }}
+        >
+          <CartesianGrid stroke="#f5f5f5" />
+          <XAxis dataKey="name" scale="band" />
+          <YAxis />
+          <Tooltip />
+          <Legend />
+          <Area type="monotone" dataKey="total" fill="#fef08a" stroke="#8884d8" />
+          <Bar dataKey="total" barSize={20} fill="#413ea0" />
+          <Line type="monotone" dataKey="id" stroke="#ff7300" />
+          
+        </ComposedChart>
+       </div>
         </div>
 
 
