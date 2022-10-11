@@ -8,7 +8,7 @@ const Quizs = () => {
     const questions = data.questions;
     console.log(questions);
     return (
-        <div>
+        <div className='grid grid-cols-3 lg:mx-72 lg:my-10 gap-10'>
            {
             questions.map(question=><Question
             key={question.id}
