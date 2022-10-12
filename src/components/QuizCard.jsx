@@ -6,7 +6,7 @@ const QuizCard = ({opt, correctAnswer}) => {
     const notify = () => {
         if(opt===correctAnswer){
             toast.success('CORRECT', {
-                position: "top-center",
+                position: "bottom-center",
                 autoClose: 3000,
                 hideProgressBar: false,
                 closeOnClick: true,
@@ -18,7 +18,7 @@ const QuizCard = ({opt, correctAnswer}) => {
         }
         else{
             toast.error('WRONG', {
-                position: "top-center",
+                position: "bottom-center",
                 autoClose: 5000,
                 hideProgressBar: false,
                 closeOnClick: true,

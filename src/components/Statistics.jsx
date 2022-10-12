@@ -42,9 +42,10 @@ const Statistics = () => {
             </span>{' '}
             Our Recent <span className="inline-block text-deep-purple-accent-400">Statistics</span>
           </h2>
-          <div className='flex justify-center align-middle sm:mx-32'>
-            <ComposedChart
-                width={500}
+          <div className='flex justify-center align-middle'>
+          
+          <ComposedChart
+                width={450}
                 height={400}
                 data={data}
                 margin={{
@@ -64,6 +65,7 @@ const Statistics = () => {
           <Line type="monotone" dataKey="id" stroke="#ff7300" />
           
         </ComposedChart>
+         
        </div>
         </div>
 

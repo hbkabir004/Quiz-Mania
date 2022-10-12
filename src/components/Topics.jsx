@@ -40,7 +40,7 @@ const Topics = () => {
                 </svg>
                 <span className="relative">Choose</span>
               </span>{' '}
-              your favourite Topic and start <span className="inline-block text-yellow-600">QUIZ</span>
+              your favourite Topic and start <span className="inline-block text-deep-purple-accent-200">QUIZ</span>
             </h2>
             
           </div>
