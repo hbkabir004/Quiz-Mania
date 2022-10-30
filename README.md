@@ -1,4 +1,4 @@
-# Quiz Mania Repository (Assignment-09)
+# Quiz Mania Repository
 
 React.js Web Application for Quiz creating and practicing with multiple answers. Made using React.js, Tailwind CSS and React Router DOM.
 
